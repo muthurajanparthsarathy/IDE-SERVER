@@ -31,7 +31,7 @@ app.use(limiter);
 // CORS configuration
 const allowedOrigins = [
   'http://localhost:3000',
-  'https://your-vercel-app.vercel.app', // Replace with your Vercel URL
+  'https://ide-client-641k.vercel.app', // Replace with your Vercel URL
   process.env.FRONTEND_URL
 ].filter(Boolean);
 
