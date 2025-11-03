@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: online-compiler
+    env: ubuntu
+    buildCommand: |
+      apt-get update
+      apt-get install -y python3
+      npm install
+    startCommand: node index.js
+    plan: free
