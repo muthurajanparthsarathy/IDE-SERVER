@@ -1,0 +1,28 @@
+{
+  "name": "python-ide-api",
+  "version": "1.0.0",
+  "description": "Python code execution API with Docker",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev src/index.ts",
+    "docker:build": "docker build -t python-ide-api .",
+    "docker:run": "docker run -p 3001:3001 python-ide-api"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.19.24",
+    "rimraf": "^6.1.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  }
+}
